@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Food Shop</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+	<header>
+		<a class="header-link btn btn-primary" href="registration.html">Registration</a>
+		<h1>Food Shop</h1>
+	</header>
+	<div id="title" class="section header">
+		<p>The best FOOD SHOP!</p>
+	</div>
+
+	<main>
+		<iframe src="registration.html"></iframe>
+		<hr>
+		<section class="buttons">
+			<button id="show-card" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+				Card (<span id="count">0</span>)
+			</button>
+			<button id="clearCard" class="btn btn-primary">Clear card</button>
+		</section>
+		<hr>
+		<section class="fruits">
+			<h2>Fruits</h2>
+			<article id="1">
+				<img src="http://www.azspagirls.com/files/2010/09/orange.jpg" alt="orange"/>
+				<h3>Orange</h3>
+				<p>Price: $10</p>
+				<button class="add-to-card btn btn-primary">Add to card</button>
+			</article>
+			<article id="2">
+				<img src="http://images.all-free-download.com/images/graphicthumb/vector_illustration_of_ripe_bananas_567893.jpg" alt="banana"/>
+				<h3>Banana</h3>
+				<p>Price: $5</p>
+				<button class="add-to-card btn btn-primary">Add to card</button>
+			</article>
+			<article id="3">
+				<img src="https://3.imimg.com/data3/IC/JO/MY-9839190/organic-lemon-250x250.jpg" alt="lemon"/>
+				<h3>Lemon</h3>
+				<p>Price: $15</p>
+				<button class="add-to-card btn btn-primary">Add to card</button>
+			</article>
+		</section>
+	</main>
+	<hr>
+	<footer>
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img class="d-block w-100" src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/powerhouse_vegetables_slideshow/650x350_powerhouse_vegetables_slideshow.jpg" alt="First slide">
+		    </div>
+		    <div class="carousel-item">
+		      <img class="d-block w-100" src="https://img1.mashed.com/img/uploads/2017/06/fruit-main.jpg" alt="Second slide">
+		    </div>
+		    <div class="carousel-item">
+		      <img class="d-block w-100" src="https://grocerkey.com/wp-content/uploads/2019/03/grocery-online-shopping-780x405.jpg" alt="Third slide">
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+
+		<hr>
+		<p>&copy; all rights reserved</p>
+	</footer>
+
+	<!-- Modal window -->
+
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Basket</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        	<table class="show-cart table" id='basket'>
+		        </table>
+		        <div>Total price: $<span id='total-card' class="total-card"></span></div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script type="text/javascript" src="script.js" defer></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
